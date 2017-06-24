@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <script src="scripts/githubController.js" charset="utf-8"></script>
+  <script src="scripts/services/githubService.js" charset="utf-8"></script>
+  <title>Omega Weekend 6 GitHub Portfolio</title>
+</head>
+
+<body ng-app="myApp">
+
+  <div class="jumbotron">
+    <h1>Kara Bayse GitHub Portfolio</h1>
+  </div>
+
+  <div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+          <a href="/profile">Profile</a>
+          <a href="/repos">Repositories</a>
+        </li>
+      </ul>
+    </nav>
+    <main ng-view></main>
+
+  </div>
+</body>
+
+</html>
