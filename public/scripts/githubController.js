@@ -1,7 +1,6 @@
 /*---- Controller ----*/
 
 var myApp = angular.module('myApp', ['ngRoute']);
-var vm = this;
 
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/profile', {
@@ -17,14 +16,17 @@ myApp.config(function($routeProvider, $locationProvider) {
 
 myApp.controller('ProfileController', function(GithubAPI) {
   console.log('in getProfile');
-  vm.profile = [];
+  var vm = this;
   vm.getProfile = function() {
     GithubAPI.githubProfile().then(function(data) {
       console.log('Profile data', data);
       vm.profile = data;
+      vm.name = data.name;
+      vm.bio = data.bio;
     });
   };
   vm.getProfile();
+  console.log(vm.profile);
 }); // end getProfile function
 
 myApp.controller('ReposController', function(GithubAPI) {

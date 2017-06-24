@@ -9,7 +9,7 @@ myApp.service('GithubAPI', function($http) {
 
   // function to get GitHub profile
   sv.githubProfile = function(){
-    console.log('in getProfile');
+    console.log('in getProfile function');
     return $http({
       method: 'GET',
       url: 'https://api.github.com/users/' + username,
@@ -23,7 +23,7 @@ myApp.service('GithubAPI', function($http) {
 
   // function to get list of repos
   this.githubRepos = function(){
-
+    console.log('in githubRepos function');
     return $http({
       method: 'GET',
       url: 'https://api.github.com/users/' + username + '/repos',
