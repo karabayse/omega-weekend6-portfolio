@@ -24,6 +24,7 @@ myApp.controller('ProfileController', function(GithubAPI) {
       vm.name = data.name;
       vm.email = data.email;
       vm.bio = data.bio;
+      vm.photo = data.avatar_url;
     });
   };
   vm.getProfile();
