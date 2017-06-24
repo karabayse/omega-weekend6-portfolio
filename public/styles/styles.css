@@ -1,9 +1,9 @@
 .jumbotron {
   font-family: "Palatino", sans-serif;
-  text-shadow: 3px 3px CadetBlue;
+  text-shadow: 4px 4px CadetBlue;
   letter-spacing: .2em;
   text-align: center;
-  color: white;
+  color: Cornsilk;
   background-image: url('http://www.visitcookcounty.com/wp-content/uploads/2014/02/TN_AURORA-3598_UL_2015-WEB.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,9 +11,14 @@
 
 body {
   font-family: "Palatino", sans-serif;
-  color: White;
+  color: Cornsilk;
   background-color: DarkSlateGrey;
   text-align: center;;
+}
+
+.profile {
+  border-style: double;
+  color: Cornsilk;
 }
 
 .col-sm-6 {
