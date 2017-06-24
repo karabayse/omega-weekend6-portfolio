@@ -3,9 +3,9 @@ Start a Portfolio
 Objectives
 
 Angular practice with:
-- [] multiple views,
-- [] controllers, and a
-- [] service
+- [X] multiple views,
+- [X] controllers, and a
+- [X] service
 
 - [] Front end styling
 - [] Hosting without a database on Heroku

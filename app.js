@@ -6,11 +6,9 @@ var express = require('express');
 var path = require('path');
 
 // code for deployment to Heroku
-var port = process.env.PORT || 3004;
+var port = process.env.PORT || 3005;
 
-// searched my notes for this, but do not know what it accomplishes;
-// know that it is necessary in order for the 'app.use' and 'app.get',
-// etc., but not certain how express functions within node
+// declare app variable and set it equal to express
 var app = express();
 
 // we need an app.use for any routes that are required
