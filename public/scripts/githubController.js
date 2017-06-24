@@ -22,6 +22,7 @@ myApp.controller('ProfileController', function(GithubAPI) {
       console.log('Profile data', data);
       vm.profile = data;
       vm.name = data.name;
+      vm.email = data.email;
       vm.bio = data.bio;
     });
   };
