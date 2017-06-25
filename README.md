@@ -8,7 +8,7 @@ Angular practice with:
 - [X] service
 
 - [X] Front end styling
-- [] Hosting without a database on Heroku
+- [X] Hosting without a database on Heroku
 
 Instructions
 
