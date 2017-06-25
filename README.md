@@ -42,5 +42,5 @@ Hard Mode
 
 Deploy
 
-- [] Deploy the app on Heroku. It doesn't have a database so you can follow the same steps as we did in lecture.
+- [X] Deploy the app on Heroku. It doesn't have a database so you can follow the same steps as we did in lecture.
 Here is the repo from the deployment lecture: https://github.com/devjanaprime/herokuDeploy_noDb

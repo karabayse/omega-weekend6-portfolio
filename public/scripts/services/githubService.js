@@ -3,10 +3,6 @@
 myApp.service('GithubAPI', function($http) {
   var sv = this;
 
-  // GitHub personal access token and username
-  var oauthToken = 'fa0e6e6aab5c00bc413d36940c88d4e3e33957ea';
-  var username = 'karabayse';
-
   // function to get GitHub profile
   sv.githubProfile = function(){
     console.log('in getProfile function');
