@@ -3,7 +3,10 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
 myApp.config(function($routeProvider, $locationProvider) {
-  $routeProvider.when('/profile', {
+  $routeProvider.when('/home', {
+    templateUrl: 'views/home.html',
+    controller: 'HomeController as hc'
+  }).when('/profile', {
     templateUrl: 'views/profile.html',
     controller: 'ProfileController as pc'
   }).when('/repos', {
