@@ -30,5 +30,5 @@ app.get('/*', function(req, res) {
 // server will listen on port 3004
 // if deploying on Heroku, need to change the port so it is not hard coded
 app.listen(port, function() {
-  console.log('server up and listening');
+  console.log('server up and listening on:', port);
 });
