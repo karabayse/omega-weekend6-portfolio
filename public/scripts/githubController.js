@@ -12,8 +12,9 @@ myApp.config(function($routeProvider, $locationProvider) {
   }).when('/repos', {
     templateUrl: 'views/repos.html',
     controller: 'ReposController as rc'
-  }).otherwise('/');
-
+  }).otherwise({
+    redirectTo: 'views/home.html',
+  });
   $locationProvider.html5Mode(true);
 });
 
