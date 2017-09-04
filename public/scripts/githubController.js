@@ -3,7 +3,7 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
 myApp.config(function($routeProvider, $locationProvider) {
-  $routeProvider.when('/home', {
+  $routeProvider.when('/', {
     templateUrl: 'views/home.html',
     controller: 'HomeController as hc'
   }).when('/profile', {
@@ -12,9 +12,8 @@ myApp.config(function($routeProvider, $locationProvider) {
   }).when('/repos', {
     templateUrl: 'views/repos.html',
     controller: 'ReposController as rc'
-  }).otherwise({
-    redirectTo: 'views/home.html',
-  });
+  }).otherwise('/');
+    // redirectTo: 'views/home.html',
   $locationProvider.html5Mode(true);
 });
 

@@ -25,6 +25,7 @@ app.use(express.static('public'));
 // resides
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'public/views/index.html'));
+  // res.sendFile(path.resolve('public/views/index.html'));
 });
 
 // server will listen on port 3004
