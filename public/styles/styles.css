@@ -11,10 +11,22 @@
   background-size: cover;
 }
 
+a {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  display: inline-block;
+  border-radius: 0;
+  color: Black;
+  font-weight: bold;
+}
+
 body {
-  font-family: "Palatino", sans-serif;
+  /*font-family: "Palatino", sans-serif;*/
+  font-family: Helvetica;
   color: Cornsilk;
-  background-color: DarkSlateGrey;
+  /*background-color: DarkSlateGrey;*/
+  background-color: LightSteelBlue;
   text-align: center;;
 }
 
@@ -25,6 +37,9 @@ body {
 
 .col-sm-6 {
   border-style: ridge;
+  border-radius: 5px;
   margin-top: 3px;
   margin-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
